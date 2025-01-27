@@ -1,6 +1,6 @@
 [project]
 name = "aqua-uq"
-version = "0.0.2"
+version = "0.0.3"
 authors = [
   { name="Andino Börst", email="borst.andino@estudiantat.upc.edu" },
 ]
