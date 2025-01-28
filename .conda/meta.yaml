@@ -26,6 +26,10 @@ requirements:
     - python
     - poetry
 
+test:
+  imports:
+    - aqua_uq
+
 about:
   home: https://github.com/andinoboerst/AQUA_UQ
   license: GPL-3.0
