@@ -15,17 +15,11 @@ build:
   script: python -m pip install --no-deps --ignore-installed .
 
 requirements:
-  build:
-    - python
-    - pip
-    - poetry
   host:
     - python
     - pip
-    - poetry
   run:
     - python
-    - poetry
 
 test:
   imports:
