@@ -1,0 +1,34 @@
+{% set version = "0.0.7" %}
+
+package:
+  name: aqua-uq
+  version: {{ version }}
+
+source:
+  # url: https://pypi.io/packages/source/i/imagesize/imagesize-{{ version }}.tar.gz
+  url: https://pypi.org/project/aqua-uq/#aqua_uq-{{ version }}.tar.gz
+  sha256: 82ae6d02795e4f51684cd3bd71d5021efa8b785579b498565cc8f57f9f6458be
+
+build:
+  noarch: python
+  script: {{PYTHON}} -m pip install --no-deps --ignore-installed .
+
+requirements:
+  build:
+    - python
+    - pip
+    - poetry
+  host:
+    - python
+    - pip
+    - poetry
+  run:
+    - python
+    - poetry
+
+about:
+  home: https://github.com/andinoboerst/AQUA_UQ
+  license: GPL-3.0
+  summary: 'Run AQUA algorithm'
+  description: |
+    Python version of the Artificial Quantification for Uncertainty Anomalies (AQUA) algorithm.
