@@ -6,8 +6,9 @@ package:
 
 source:
   # url: https://pypi.io/packages/source/i/imagesize/imagesize-{{ version }}.tar.gz
-  url: https://pypi.org/project/aqua-uq/#aqua_uq-*version*.tar.gz
-  sha256: 82ae6d02795e4f51684cd3bd71d5021efa8b785579b498565cc8f57f9f6458be
+  # url: https://pypi.org/project/aqua-uq/#aqua_uq-*version*.tar.gz
+  # sha256: 82ae6d02795e4f51684cd3bd71d5021efa8b785579b498565cc8f57f9f6458be
+  path: ../src/aqua_uq
 
 build:
   noarch: python
